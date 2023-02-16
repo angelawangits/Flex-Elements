@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-items</title>
+    <link rel="stylesheet" href="../shared/reset.css">
+</head>
+<body>
+<div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+</div>
+</body>
+</html>
+
+<style>
+    .flex-start{
+        align-items: flex-start;
+    }
+    .center{
+        align-items: center;
+    }
+    .flex-end{
+        align-items: flex-end;
+    }
+    .stretch{
+        align-items: stretch;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+
+    .container{
+        width: 1000px;
+        height: 600px;
+        background-color: #243763;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .item{
+        width: 200px;
+        font-size: 36px;
+        font-family: "Roboto Light",sans-serif;
+        text-align: center;
+    }
+
+    .item1{
+        background-color: #FD8A8A;
+        padding: 50px 0;
+    }
+
+    .item2{
+        background-color: #F1F7B5;
+        padding: 150px 0;
+    }
+
+    .item3{
+        background-color: #A8D1D1;
+        padding: 100px 0;
+    }
+
+</style>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <link rel="stylesheet" href="../shared/reset.css">
+</head>
+<body>
+1. 父元素寬度「足夠」的情況
+<div class="container enough">
+    <div class="item item1 setting-1"></div>
+    <div class="item item2 setting-2"></div>
+</div>
+
+2. 父元素寬度「不足」的形況下
+<div class="container less">
+    <div class="item item1 setting-1"></div>
+    <div class="item item2 setting-2"></div>
+</div>
+</body>
+</html>
+
+<style>
+    .setting-1{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+    }
+    .setting-2{
+        flex-grow: 2;
+        flex-shrink: 2;
+        flex-basis: 200px;
+    }
+
+    .container{
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .enough{
+        width: 1000px;
+    }
+    .less{
+        width: 300px;
+    }
+    .item{
+        height: 100px;
+    }
+    .item1{
+        background-color: #FD8A8A;
+    }
+    .item2{
+        background-color: #A8D1D1;
+    }
+
+</style>

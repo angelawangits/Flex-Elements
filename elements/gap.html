@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="../shared/reset.css">
 </head>
 <body>
+<div class="description">
+    <h2>possible class value:</h2>
+    <ul>
+        <li><span class="highlight">gap-one-value</span> ⇒ gap: 15px;</li>
+        <li><span class="highlight">gap-percent</span> ⇒ gap: 10%;</li>
+        <li><span class="highlight">gap-two-value</span> ⇒ gap: 10px 40px;</li>
+        <li><span class="highlight">row</span> ⇒ row-gap: 30px;</li>
+        <li><span class="highlight">column</span> ⇒ column-gap: 30px;</li>
+    </ul>
+</div>
 <div class="container">
     <div class="item item1">1</div>
     <div class="item item2">2</div>
@@ -69,5 +79,20 @@
 
     .item4{
         background-color: #DBA39A;
+    }
+    .description{
+        margin: 20px auto;
+        width: 800px;
+        font-family: "Roboto Light", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .highlight{
+        color: red;
+        font-weight: bold;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 24px;
     }
 </style>

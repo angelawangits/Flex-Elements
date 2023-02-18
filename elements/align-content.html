@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="../shared/reset.css">
 </head>
 <body>
+<div class="description">
+    <h2>possible class value:</h2>
+    <ul>
+        <li><span class="highlight">flex-start</span> ⇒ align-content: flex-start;</li>
+        <li><span class="highlight">center</span> ⇒ align-content: center;</li>
+        <li><span class="highlight">flex-end</span> ⇒ align-content: flex-end;</li>
+        <li><span class="highlight">stretch</span> ⇒ align-content: stretch;</li>
+        <li><span class="highlight">space-between</span> ⇒ align-content: space-between;</li>
+        <li><span class="highlight">space-around</span> ⇒ align-content: space-around;</li>
+        <li><span class="highlight">space-evenly</span> ⇒ align-content: space-evenly;</li>
+    </ul>
+</div>
 <div class="container">
     <div class="item item1">1</div>
     <div class="item item2">2</div>
@@ -78,5 +90,19 @@
     .item4{
         background-color: #DBA39A;
     }
-
+    .description{
+        margin: 20px auto;
+        width: 800px;
+        font-family: "Roboto Light", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .highlight{
+        color: red;
+        font-weight: bold;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
 </style>

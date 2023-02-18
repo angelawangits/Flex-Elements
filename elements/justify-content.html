@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="../shared/reset.css">
 </head>
 <body>
+<div class="description">
+    <h2>possible class value:</h2>
+    <ul>
+        <li><span class="highlight">flex-start</span> ⇒ justify-content: flex-start;</li>
+        <li><span class="highlight">center</span> ⇒ justify-content: center;</li>
+        <li><span class="highlight">flex-end</span> ⇒ justify-content: flex-end;</li>
+        <li><span class="highlight">space-between</span> ⇒ justify-content: space-between;</li>
+        <li><span class="highlight">space-around</span> ⇒ justify-content: space-around;</li>
+        <li><span class="highlight">space-evenly</span> ⇒ justify-content: space-evenly;</li>
+    </ul>
+</div>
 <div class="container">
     <div class="item item1">1</div>
     <div class="item item2">2</div>
@@ -63,6 +74,21 @@
 
     .item3{
         background-color: #A8D1D1;
+    }
+    .description{
+        margin: 20px auto;
+        width: 800px;
+        font-family: "Roboto Light", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .highlight{
+        color: red;
+        font-weight: bold;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 24px;
     }
 
 </style>
